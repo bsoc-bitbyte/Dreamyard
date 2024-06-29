@@ -24,6 +24,7 @@ public class GateOpen : MonoBehaviour
         if (FruitsToBeCollected == fruitCollision.CountTillNow){
             OpenGate = true;
             animator.SetTrigger("isOpen");
+            faceandBodyChanger.enabled = false;
             faceandBodyChanger.FaceRenderer.sprite = faceandBodyChanger.LevelFinish;
         }
     }

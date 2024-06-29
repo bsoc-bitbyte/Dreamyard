@@ -9,8 +9,8 @@ TagManager:
   - MovingPlatform
   - FallingPlatform
   - Fruit
-  - Gate
   - Spikes
+  - Wall
   layers:
   - Default
   - TransparentFX

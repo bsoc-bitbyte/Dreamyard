@@ -13,7 +13,6 @@ public class MovingThePlatform : MonoBehaviour
     public bool I_LIKE_IT;
     public Animator animator;
 
-
     Vector2 TargetPosition;
 
     void Start(){
@@ -33,11 +32,9 @@ public class MovingThePlatform : MonoBehaviour
             if (Vector2.Distance(transform.position, Position_B.position) < 0.1f){
                 TargetPosition = Position_A.position;
             }
-        
-            if (I_LIKE_IT){
+           
             transform.position = Vector2.MoveTowards(transform.position, TargetPosition, speed*Time.deltaTime);  
-            }
-        
+            
         }    
 
         else{
@@ -59,7 +56,4 @@ public class MovingThePlatform : MonoBehaviour
         }
     }
 
-
-
-      
 }

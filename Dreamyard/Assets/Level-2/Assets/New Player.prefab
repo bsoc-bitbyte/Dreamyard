@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 3924720706963923211}
   - component: {fileID: 7935785859826983533}
   - component: {fileID: 3004442617018842272}
+  - component: {fileID: 2586338162682092158}
   m_Layer: 0
   m_Name: New Player
   m_TagString: Player
@@ -349,6 +350,20 @@ MonoBehaviour:
   PlayerRenderer: {fileID: 6307486840708616941}
   FaceRenderer: {fileID: 3011896313746215117}
   particleSystem: {fileID: 8192052962535303344}
+--- !u!114 &2586338162682092158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927031402680688864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faaa3a05052e0a4438192b078969dfda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  death: {fileID: 3004442617018842272}
+  fruitCollision: {fileID: 3924720706963923211}
 --- !u!1 &3830686847657415910
 GameObject:
   m_ObjectHideFlags: 0

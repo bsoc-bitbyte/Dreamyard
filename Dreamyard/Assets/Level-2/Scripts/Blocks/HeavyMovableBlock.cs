@@ -22,10 +22,17 @@ public class HeavyMovableBlock : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collider){
+    void OnCollisionEnter2D(Collision2D collider){
         if (collider.gameObject.CompareTag("Player") && shape_Changer.isSquare && special_Moves.SpecialCharged){
             BlockBody.constraints =RigidbodyConstraints2D.None;
             BlockBody.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
+
+    void OnCollisionExit2D(Collision2D collider){
+        if (collider.gameObject.CompareTag("Player")){
+        BlockBody.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+    }
+    
 }

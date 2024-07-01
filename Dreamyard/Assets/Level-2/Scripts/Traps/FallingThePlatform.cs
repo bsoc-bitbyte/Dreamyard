@@ -13,8 +13,8 @@ public class FallingThePlatform : MonoBehaviour
 
     [SerializeField] private Rigidbody2D Platform;
     
-    public Special_moves Special_Moves;
-    public shape_changer Shape_Changer;
+    Special_moves Special_Moves;
+    shape_changer Shape_Changer;
 
     
 
@@ -45,6 +45,8 @@ public class FallingThePlatform : MonoBehaviour
         if (collider.gameObject.CompareTag("Player")){
             hasCollided = true;
             StartTime = Time.time;
+            Shape_Changer = collider.gameObject.GetComponent<shape_changer>();
+            Special_Moves = collider.gameObject.GetComponent<Special_moves>();
         }  
     }
 

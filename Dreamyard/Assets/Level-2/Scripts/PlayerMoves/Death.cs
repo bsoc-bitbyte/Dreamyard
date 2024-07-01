@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -16,21 +17,21 @@ public class Death : MonoBehaviour
     public new ParticleSystem particleSystem;
 
 
+    void LateUpdate(){
+        if (Input.GetKeyDown(KeyCode.LeftControl)){
+            Die();
+        }
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collider){
         if (collider.gameObject.CompareTag("Spikes")){
             
-            StartCoroutine("MoveAfter");
-
-            if (fruitCollision.LastFruitCollected != Vector3.zero){
-
-
-            Instantiate(Fruit, fruitCollision.LastFruitCollected, new Quaternion(0,0,0,0));
-            fruitCollision.LastFruitCollected = Vector3.zero;
-            fruitCollision.CountTillNow --;
+            Die();
 
             }
         }
-    }
+    
 
     IEnumerator MoveAfter(){
         //before
@@ -46,5 +47,16 @@ public class Death : MonoBehaviour
         Player.position = InitialPosition;
         PlayerRenderer.enabled = true;
         FaceRenderer.enabled = true;
+    }
+
+    void Die(){
+        StartCoroutine("MoveAfter");
+
+        if (fruitCollision.LastFruitCollected != Vector3.zero){
+            
+            Instantiate(Fruit, fruitCollision.LastFruitCollected, new Quaternion(0,0,0,0));
+            fruitCollision.LastFruitCollected = Vector3.zero;
+            fruitCollision.CountTillNow --;
+        }
     }
 }

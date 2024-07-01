@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class BreakingBlocks : MonoBehaviour
 {   
-    public Special_moves Special_Moves;
-    public shape_changer Shape_Changer;
+    Special_moves Special_Moves;
+    shape_changer Shape_Changer;
 
     bool hasCollided;
 
-    public Transform PlayerPosition;
+    Transform PlayerPosition;
 
     [SerializeField] private new ParticleSystem particleSystem;
     [SerializeField] public SpriteRenderer spriteRenderer;
@@ -37,6 +37,9 @@ public class BreakingBlocks : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collider){
         if (collider.gameObject.CompareTag("Player")){
             hasCollided = true;
+            Special_Moves = collider.gameObject.GetComponent<Special_moves>();
+            Shape_Changer = collider.gameObject.GetComponent<shape_changer>();
+            PlayerPosition = collider.gameObject.GetComponent<Transform>();
         }
     }
 

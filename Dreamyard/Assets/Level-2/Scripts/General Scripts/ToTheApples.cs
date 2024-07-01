@@ -16,6 +16,7 @@ public class ToTheApples : MonoBehaviour
     int index;
 
     public GateOpen gateOpen;
+    public float OffsetDistance;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,7 @@ public class ToTheApples : MonoBehaviour
     void Update(){
         transform.position = Vector3.Lerp(transform.position, Fruits[index].position + camera_Follow.offset, velocity);
         
-        if (Vector3.Distance(transform.position, Fruits[index].position) < 8.55f){
+        if (Vector3.Distance(transform.position, Fruits[index].position) < OffsetDistance){
             index ++;
         }
 

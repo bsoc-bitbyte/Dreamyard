@@ -11,6 +11,9 @@ TagManager:
   - Fruit
   - Spikes
   - Wall
+  - Checkpoint
+  - Destroy
+  - HeavyBlock
   layers:
   - Default
   - TransparentFX

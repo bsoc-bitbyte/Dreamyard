@@ -7,6 +7,7 @@ how to play:
 A D : to move left and right
 (Space) : to jump
 Hold (Left Shift) to Activate special
+press (left Ctrl) to reset, the last collected apple will also be reset.
 
 I : for Square
 J: for Circle

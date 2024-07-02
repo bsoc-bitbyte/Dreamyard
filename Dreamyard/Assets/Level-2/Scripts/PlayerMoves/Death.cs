@@ -14,6 +14,7 @@ public class Death : MonoBehaviour
 
     public SpriteRenderer PlayerRenderer;
     public SpriteRenderer FaceRenderer;
+    public Rigidbody2D PlayerBody;
     public new ParticleSystem particleSystem;
 
 
@@ -37,6 +38,7 @@ public class Death : MonoBehaviour
         //before
         PlayerRenderer.enabled = false;
         FaceRenderer.enabled = false;
+        PlayerBody.constraints = RigidbodyConstraints2D.FreezeAll;
         
         particleSystem.Play();
 
@@ -45,6 +47,8 @@ public class Death : MonoBehaviour
 
         //after
         Player.position = InitialPosition;
+        PlayerBody.constraints = RigidbodyConstraints2D.None;
+        PlayerBody.constraints = RigidbodyConstraints2D.FreezeRotation;
         PlayerRenderer.enabled = true;
         FaceRenderer.enabled = true;
     }

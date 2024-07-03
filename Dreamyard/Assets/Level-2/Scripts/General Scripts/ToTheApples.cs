@@ -29,12 +29,12 @@ public class ToTheApples : MonoBehaviour
 
         transform.position = new Vector3(-0.86f, 0.8f, -8.5f);
         index  = 0;
-        velocity = 0.007f;
+        velocity = 4f;
 
     }
 
     void Update(){
-        transform.position = Vector3.Lerp(transform.position, Fruits[index].position + camera_Follow.offset, velocity);
+        transform.position = Vector3.Lerp(transform.position, Fruits[index].position + camera_Follow.offset, velocity*Time.deltaTime);
         
         if (Vector3.Distance(transform.position, Fruits[index].position) < OffsetDistance){
             index ++;

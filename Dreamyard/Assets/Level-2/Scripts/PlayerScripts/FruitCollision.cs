@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class FruitCollision : MonoBehaviour
 {   
@@ -11,6 +8,7 @@ public class FruitCollision : MonoBehaviour
 
     public Vector3 LastFruitCollected;
     public TextMeshProUGUI CoinCountDisplay;
+    public GateOpen gateOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +19,7 @@ public class FruitCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CoinCountDisplay.text = ":" + CountTillNow.ToString();
+        CoinCountDisplay.text = ":" + CountTillNow.ToString()+"/"+ gateOpen.FruitsToBeCollected;
     }
 
     private void OnTriggerEnter2D(Collider2D collider){

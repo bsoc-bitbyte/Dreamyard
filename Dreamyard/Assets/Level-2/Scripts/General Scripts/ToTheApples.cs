@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using Unity.VisualScripting;
 using UnityEngine;
-using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
 public class ToTheApples : MonoBehaviour
@@ -40,7 +35,7 @@ public class ToTheApples : MonoBehaviour
             index ++;
         }
 
-        if (index==gateOpen.FruitsToBeCollected){
+        if (index==Fruits.Length){
             camera_Follow.enabled = true;
             this.enabled = false;
         }

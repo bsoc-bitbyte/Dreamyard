@@ -1,0 +1,24 @@
+#To add in the menu
+
+A D : to move left and right
+(Space) : to jump
+Hold (Left Shift) to Activate special
+press (left Ctrl) to reset, the last collected apple will also be reset.
+
+I : for Square
+J: for Circle
+K: for triangle
+
+Mechanics--
+Squares are heavy they can break objects when falling or move object when special is activated...
+Circles are balls they have a faster velocity, and jump higher.
+Triangle are spikes, they can break objects while jumping, upwards...
+
+AIM:
+To collect all the apples in the level...
+There are 6 apples in part 1
+After collecting all the gate will open and you can change the level (Trigger in GeneralScripts/GateOpen)
+
+DEATH:
+The apples give you life, if you die the last apple you collected will respawn...
+on zero apples you will respawn normally, no bad things will happen(it is a dream after all) 

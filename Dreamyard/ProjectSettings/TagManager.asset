@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BasicGround
+  - JumpPad
+  - MovingPlatform
+  - FallingPlatform
+  - Fruit
+  - Spikes
+  - Wall
+  - Checkpoint
+  - Destroy
+  - HeavyBlock
+  - TutorialPoints
   layers:
   - Default
   - TransparentFX
@@ -11,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

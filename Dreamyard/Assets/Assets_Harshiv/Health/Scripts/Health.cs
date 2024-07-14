@@ -112,9 +112,9 @@ public class Health : MonoBehaviour
     public void OnDeath()
     {
         // Check current scene index
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
 
-        if (sceneIndex == 5)
+        if (SceneManager.GetActiveScene().name == "lvl5_Scene5")
         {
             // Scene 5 logic: Call DreamOver for player death, GameOver for hero death
             if (gameObject.CompareTag("Player"))

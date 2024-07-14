@@ -95,7 +95,7 @@ MonoBehaviour:
   BossSphereClip: {fileID: 8300000, guid: 92dd6e133bdf43d4c87477ffa955c4eb, type: 3}
   volumeSphere: 0.4
   BossArrowClip: {fileID: 8300000, guid: 7e1699b660296aa4e96a937f33cb6bdf, type: 3}
-  volumeArrow: 0.5
+  volumeArrow: 0.6
 --- !u!1101 &-2502143355051009556
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

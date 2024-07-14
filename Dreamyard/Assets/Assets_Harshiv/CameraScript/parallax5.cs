@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class parallax : MonoBehaviour
+public class parallax5 : MonoBehaviour
 {
     Material mat;
     float distance;

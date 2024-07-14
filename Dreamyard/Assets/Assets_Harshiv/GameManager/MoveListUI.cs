@@ -16,7 +16,7 @@ public class MoveListUI : MonoBehaviour
 
 
         // Check if we are in Scene 1 and show the move list if so
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().name == "lvl5_Scene1")
         {
             ShowMoveList();
         }

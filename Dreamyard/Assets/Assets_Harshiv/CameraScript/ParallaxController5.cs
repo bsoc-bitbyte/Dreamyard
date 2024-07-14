@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParallaxController : MonoBehaviour
+public class ParallaxController5 : MonoBehaviour
 {
     Transform cam;
     Vector3 camStartPos;

@@ -174,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2180264, guid: 8041fc00b2168874f9ba97e0cc2e4be6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -218,8 +218,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You are in the EndGame Now Conquer the world
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8041fc00b2168874f9ba97e0cc2e4be6, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8041fc00b2168874f9ba97e0cc2e4be6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -336,4 +336,4 @@ MonoBehaviour:
   window: {fileID: 3687419120640786148}
   dialogues: []
   dialogueText: {fileID: 8242651374962108838}
-  writingSpeed: 0.03
+  writingSpeed: 0.01

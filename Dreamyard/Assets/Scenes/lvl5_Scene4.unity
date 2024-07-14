@@ -5549,14 +5549,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1887576950952337915, guid: 347cff6139418794a92090184de430a7, type: 3}
-      propertyPath: components.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887576950952337915, guid: 347cff6139418794a92090184de430a7, type: 3}
-      propertyPath: components.Array.data[2]
-      value: 
-      objectReference: {fileID: 1594122064}
     - target: {fileID: 5502293461355895978, guid: 347cff6139418794a92090184de430a7, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -13478,14 +13470,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1887576950952337915, guid: 347cff6139418794a92090184de430a7, type: 3}
-      propertyPath: components.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887576950952337915, guid: 347cff6139418794a92090184de430a7, type: 3}
-      propertyPath: components.Array.data[2]
-      value: 
-      objectReference: {fileID: 1232866951}
     - target: {fileID: 5502293461355895978, guid: 347cff6139418794a92090184de430a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -15616,11 +15600,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092325071}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!61 &1232866951 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2704793813825905779, guid: 347cff6139418794a92090184de430a7, type: 3}
-  m_PrefabInstance: {fileID: 758888508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1301408308
 GameObject:
   m_ObjectHideFlags: 0
@@ -22236,11 +22215,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2098444466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1594122064 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2704793813825905779, guid: 347cff6139418794a92090184de430a7, type: 3}
-  m_PrefabInstance: {fileID: 254363304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1620548813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30017,7 +29991,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   deathParticles: {fileID: 0}
-  targetSceneIndex: 5
 --- !u!114 &2873248057762437634
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class PlayerAttackMagic : MonoBehaviour
     [SerializeField] private GameObject[] magicBalls;
 
     private Animator anim;
-    private PlayerMovement playerMovement;
+    private PlayerMovement5 playerMovement;
     private float cooldownTimer = Mathf.Infinity;
 
     [SerializeField] private AudioClip MagicProjectileClip;
@@ -18,7 +18,7 @@ public class PlayerAttackMagic : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = GetComponent<PlayerMovement5>();
     }
 
     private void Update()

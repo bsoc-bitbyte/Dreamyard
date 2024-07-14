@@ -19,6 +19,6 @@ public class StartManager : MonoBehaviour
     public void Play()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("lvl5_Scene1");
     }
 }

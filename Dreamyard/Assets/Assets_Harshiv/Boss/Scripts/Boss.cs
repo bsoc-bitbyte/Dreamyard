@@ -129,7 +129,7 @@ public class Boss : MonoBehaviour
     private IEnumerator HandleDeath()
     {
         // Delay for 5 seconds
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(14f);
 
         // Teleport player to next scene
         GameManager.Instance.TeleportPlayerToNextScene();

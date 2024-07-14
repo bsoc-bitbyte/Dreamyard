@@ -46,7 +46,7 @@ public class UIManager : MonoBehaviour
                 source.enabled = true;
             }
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("lvl5_Scene1");
     }
 
     public void MainMenu()
@@ -58,7 +58,7 @@ public class UIManager : MonoBehaviour
                 source.enabled = true;
             }
         }
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("_lvl5_MainMenu");
     }
 
     public void Quit()

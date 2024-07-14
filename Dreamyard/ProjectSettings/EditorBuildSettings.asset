@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Assets_Harshiv/Scenes/_MainMenu.unity
+    guid: 3d4bfa78726e0444aa71dbf50c20c45f
+  - enabled: 1
+    path: Assets/Assets_Harshiv/Scenes/Scene1.unity
+    guid: 6b237df3b95aa314a812bf07c96df020
+  - enabled: 1
+    path: Assets/Assets_Harshiv/Scenes/Scene2.unity
+    guid: 9a855f612e5cc1b4191b5580025da1f1
+  - enabled: 1
+    path: Assets/Assets_Harshiv/Scenes/Scene3.unity
+    guid: 390b8a9287b69c341b96518537ef2598
+  - enabled: 1
+    path: Assets/Assets_Harshiv/Scenes/Scene4.unity
+    guid: 1c735275b0894a94fbe02bc404dcad3a
+  - enabled: 1
+    path: Assets/Assets_Harshiv/Scenes/Scene5.unity
+    guid: 25fe9d6a2714e2d499b9d1591460b695
   m_configObjects: {}

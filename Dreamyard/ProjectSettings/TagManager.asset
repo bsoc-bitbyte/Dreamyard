@@ -15,6 +15,16 @@ TagManager:
   - Destroy
   - HeavyBlock
   - TutorialPoints
+  - Ground
+  - FallDetector
+  - NextLevel
+  - Enemy
+  - Boss
+  - Magic Arrow
+  - Magic Sphere
+  - Boundary
+  - Magic
+  - Hero
   layers:
   - Default
   - TransparentFX
@@ -23,13 +33,13 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Boss
+  - Magic
+  - Heart
+  - BoundaryPlayer
+  - Hero
   - 
   - 
   - 

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Special_moves : MonoBehaviour
 {   
     public SpriteRenderer CharacterSprite;
-    PlayerMovement playerMovement;
+    PlayerMovement2 playerMovement;
 
     float Starttime = 0;
     float Holdtime;
@@ -14,7 +14,7 @@ public class Special_moves : MonoBehaviour
     void Start(){
         SpecialCharged = false;
         Holdtime = 0.5f;
-        playerMovement = transform.GetComponent<PlayerMovement>();
+        playerMovement = transform.GetComponent<PlayerMovement2>();
         Circle_Special(transform.GetComponent<shape_changer>().isCircle);
     }
 

@@ -26,9 +26,10 @@ public class holding : MonoBehaviour
         if (!isHolding)
         {
             RaycastHit2D hitinfo = Physics2D.Raycast(raypoint.position, transform.right, rayddistance);
+
             if (hitinfo.collider != null && hitinfo.collider.gameObject.layer == layerIndex)
             {
-                if (Keyboard.current.spaceKey.wasPressedThisFrame && grabbedObject == null)
+                if (Keyboard.current.eKey.wasPressedThisFrame && grabbedObject == null)
                 {
                     grabbedObject = hitinfo.collider.gameObject;
                     grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
@@ -39,7 +40,7 @@ public class holding : MonoBehaviour
                 }
             }
         }
-        else if (Keyboard.current.spaceKey.wasPressedThisFrame && isHolding)
+        else if (Keyboard.current.eKey.wasPressedThisFrame && isHolding)
         {
             grabbedObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;

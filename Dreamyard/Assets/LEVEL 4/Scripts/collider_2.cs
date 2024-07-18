@@ -19,6 +19,7 @@ public class collider_bridge : MonoBehaviour
     private string String1 = "" + "B" + "R" + "I" + "D" + "G" + "E";
     private char checker = '\0';
     AudioManager audioManager;
+    
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -78,6 +79,7 @@ public class collider_bridge : MonoBehaviour
                 checker = '\0';
                 bscript.SetPressedfalse();
                 button_pressed = false;
+                transform.position = new Vector3(transform.position.x+1,transform.position.y,transform.position.z);
             }
         }
         if (rscript.R_pressed || checker == 'R')
@@ -94,6 +96,7 @@ public class collider_bridge : MonoBehaviour
                 checker = '\0';
                 rscript.SetPressedfalse();
                 button_pressed = false;
+                transform.position = new Vector3(transform.position.x , transform.position.y+1, transform.position.z);
             }
         }
         if (i1script.I_pressed || checker == 'I')
@@ -110,6 +113,7 @@ public class collider_bridge : MonoBehaviour
                 checker = '\0';
                 i1script.SetPressedfalse();
                 button_pressed = false;
+                transform.position = new Vector3(transform.position.x + 1, transform.position.y-1, transform.position.z);
             }
         }
         if (dscript.D_pressed || checker == 'D')
@@ -126,6 +130,7 @@ public class collider_bridge : MonoBehaviour
                 checker = '\0';
                 dscript.SetPressedfalse();
                 button_pressed = false;
+                transform.position = new Vector3(transform.position.x , transform.position.y +1, transform.position.z);
             }
         }
         if (gscript.G_pressed || checker == 'G')
@@ -142,6 +147,7 @@ public class collider_bridge : MonoBehaviour
                 checker = '\0';
                 gscript.SetPressedfalse();
                 button_pressed = false;
+                transform.position = new Vector3(transform.position.x-1, transform.position.y , transform.position.z);
             }
         }
 
@@ -160,6 +166,7 @@ public class collider_bridge : MonoBehaviour
                 checker = '\0';
                 escript.SetPressedfalse();
                 button_pressed = false;
+                transform.position = new Vector3(transform.position.x - 1, transform.position.y-1, transform.position.z);
             }
         }
         if (String.Equals(String1, System.StringComparison.OrdinalIgnoreCase) == true||T)

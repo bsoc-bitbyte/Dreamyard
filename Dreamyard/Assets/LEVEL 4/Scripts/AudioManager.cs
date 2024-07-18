@@ -23,10 +23,12 @@ public class AudioManager : MonoBehaviour
     }
     public void Playsfx(AudioClip clip)
     {
-        SFX.PlayOneShot(clip);
+        SFX.clip = clip;
+        SFX.Play();
     }
     public void Walkig(AudioClip clip)
     {
-        Walking.PlayOneShot(clip);
+        SFX.clip = clip;
+        Walking.Play();
     }
 }

@@ -18,7 +18,7 @@ TagManager:
   - UI
   - ball
   - collider
-  - 
+  - post
   - 
   - 
   - 
@@ -46,6 +46,15 @@ TagManager:
   - name: Background
     uniqueID: 2526546173
     locked: 0
+  - name: background 2
+    uniqueID: 3255500807
+    locked: 0
+  - name: text
+    uniqueID: 324561921
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Platform
+    uniqueID: 3095082157
     locked: 0

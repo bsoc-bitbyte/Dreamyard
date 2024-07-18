@@ -25,6 +25,11 @@ TagManager:
   - Boundary
   - Magic
   - Hero
+  - circle
+  - collider
+  - Platform
+  - Audio
+  - Sling
   layers:
   - Default
   - TransparentFX
@@ -59,6 +64,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 830117295
+    locked: 0
+  - name: background2
+    uniqueID: 2417525145
+    locked: 0
+  - name: Text
+    uniqueID: 4015020385
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Platform
+    uniqueID: 287160533
     locked: 0

@@ -144,9 +144,10 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-	public void Easy()
+	public bool Easy()
 	{
 		m_AirControl = true;
+		return true;
 	}
 	public void Hard()
 	{

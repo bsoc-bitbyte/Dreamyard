@@ -36,6 +36,9 @@ public class NPC : MonoBehaviour
             {
                 contButton.SetActive(true);
             }
+            if (Input.GetKeyDown(KeyCode.Return)) {
+                NextLine();
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -69,7 +72,7 @@ public class NPC : MonoBehaviour
     }
     public void NextLine()
     {
-        contButton.SetActive(false );
+        
         if (index < dialouge.Length - 1)
         {
             index++;

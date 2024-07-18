@@ -1,11 +1,13 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
-public class PlayerMovement1 : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] private float speed;
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
+    private CharacterController2D characterController;
 
     private void Awake()
     {
@@ -13,11 +15,24 @@ public class PlayerMovement1 : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
+    
 
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(horizontalInput * _speed, body.velocity.y);
+        
+            float horizontalInput = Input.GetAxis("Horizontal");
+        if (!PLAY.easy)
+        {
+            if (grounded)
+            {
+                body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+            }
+            
+        }
+        else
+        {
+            body.velocity = new Vector2(horizontalInput * speed * 0.5f, body.velocity.y);
+        }
 
         //Flip player when facing left/right.
         if (horizontalInput > 0.01f)
@@ -25,7 +40,7 @@ public class PlayerMovement1 : MonoBehaviour
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        if (Input.GetKey(KeyCode.Space) && grounded)
+        if (Input.GetButtonDown("Jump") && grounded)
             Jump();
 
         //sets animation parameters
@@ -35,7 +50,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, _speed);
+        body.velocity = new Vector2(body.velocity.x, speed);
         anim.SetTrigger("jump");
         grounded = false;
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PLAY : MonoBehaviour
 {
-    public static bool easy;
+    public static bool easy=true;
     // Start is called before the first frame update
     public void PlayEasy()
     {
